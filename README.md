@@ -1,6 +1,6 @@
 ## Code to calibrate tools for clinical interpretation and generate summarized results
 
-This repository contains only the **code** relevant to the paper. Due to large file sizes, data and intermediate result files are hosted [here](https://zenodo.org/record/8347415). Each of the files (`data.zip` and `results.zip`) contains a README that provides additional information on the data and results. Please refer to these and link the relevant files to the code provided in this repository so that the scripts and functions access the correct input files.
+This repository contains only the **code** relevant to the original paper. Due to large file sizes, data and intermediate result files are hosted [here](https://zenodo.org/record/8347415). Each of the files (`data.zip` and `results.zip`) contains a README that provides additional information on the data and results. Please refer to these and link the relevant files to the code provided in this repository so that the scripts and functions access the correct input files. All figures and tables reference the original paper. In addition, code for updated analyses and tools have been added here.
 
 ### Repository structure
 
@@ -16,7 +16,6 @@ The repository is organized as follows:
 │   ├── main.m
 │   ├── plot_both_posteriors.m
 │   ├── print_thresholds.m
-│   └── add_3pt_thrs.m
 ├── plotting
 │   ├── plot_both_posteriors_pub.m
 │   ├── plot_correlation.m
@@ -26,7 +25,8 @@ The repository is organized as follows:
 └── results_postprocessing
     ├── assess_default_thresholds.m
     ├── calculate_coverage.m
-    └── make_thr_table.m
+    ├── make_thr_table.m
+    └── add_3pt_thrs.m
 ```
 
 #### 1. `local_posterior_probability`
@@ -42,7 +42,7 @@ This directory contains scripts to post-process outputs from `local_posterior_pr
 * `make_thr_table.m` : script to generate and systematically print out the score thresholds in Table 2 (and Supplemental Table S1). Note that the format is not exactly as in the paper but it should be easy to update manually to align with the format in the paper.
 * `assess_default_thresholds.m` : script to generate Table 3.
 * `calculate_coverage.m` : script to generate Supplemental Table S2.
-
+* `add_3pt_thrs.m` : script to recalculate thresholds to include the 3-pt level (based on the ACMG/AMP points-based system). This should be run first before running any other code.
 
 #### 3. `plotting`
 
