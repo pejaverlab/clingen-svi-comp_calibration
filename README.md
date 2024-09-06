@@ -15,7 +15,8 @@ The repository is organized as follows:
 │   ├── get_discounted_thresholds.m
 │   ├── main.m
 │   ├── plot_both_posteriors.m
-│   └── print_thresholds.m
+│   ├── print_thresholds.m
+│   └── add_3pt_thrs.m
 ├── plotting
 │   ├── plot_both_posteriors_pub.m
 │   ├── plot_correlation.m
